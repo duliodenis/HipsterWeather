@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CCF02141B2CB96D0014A0F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF02131B2CB96D0014A0F3 /* AppDelegate.swift */; };
+		6CCF02161B2CB96D0014A0F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF02151B2CB96D0014A0F3 /* ViewController.swift */; };
+		6CCF02191B2CB96D0014A0F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF02171B2CB96D0014A0F3 /* Main.storyboard */; };
+		6CCF021B1B2CB96D0014A0F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF021A1B2CB96D0014A0F3 /* Assets.xcassets */; };
+		6CCF021E1B2CB96D0014A0F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF021C1B2CB96D0014A0F3 /* LaunchScreen.storyboard */; };
+		6CCF02291B2CB96D0014A0F3 /* HipsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF02281B2CB96D0014A0F3 /* HipsterTests.swift */; };
+		6CCF02341B2CB96D0014A0F3 /* HipsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF02331B2CB96D0014A0F3 /* HipsterUITests.swift */; };
+		6CCF02441B2CBAEE0014A0F3 /* CurrentWeather.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CCF02431B2CBAEE0014A0F3 /* CurrentWeather.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CCF02251B2CB96D0014A0F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CCF02081B2CB96D0014A0F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CCF020F1B2CB96D0014A0F3;
+			remoteInfo = Hipster;
+		};
+		6CCF02301B2CB96D0014A0F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CCF02081B2CB96D0014A0F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CCF020F1B2CB96D0014A0F3;
+			remoteInfo = Hipster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6CCF02101B2CB96D0014A0F3 /* Hipster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hipster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CCF02131B2CB96D0014A0F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6CCF02151B2CB96D0014A0F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6CCF02181B2CB96D0014A0F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CCF021A1B2CB96D0014A0F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CCF021D1B2CB96D0014A0F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6CCF021F1B2CB96D0014A0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CCF02241B2CB96D0014A0F3 /* HipsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HipsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CCF02281B2CB96D0014A0F3 /* HipsterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HipsterTests.swift; sourceTree = "<group>"; };
+		6CCF022A1B2CB96D0014A0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CCF022F1B2CB96D0014A0F3 /* HipsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HipsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CCF02331B2CB96D0014A0F3 /* HipsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HipsterUITests.swift; sourceTree = "<group>"; };
+		6CCF02351B2CB96D0014A0F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CCF02431B2CBAEE0014A0F3 /* CurrentWeather.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrentWeather.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CCF020D1B2CB96D0014A0F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCF02211B2CB96D0014A0F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCF022C1B2CB96D0014A0F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CCF02071B2CB96D0014A0F3 = {
+			isa = PBXGroup;
+			children = (
+				6CCF02121B2CB96D0014A0F3 /* Hipster */,
+				6CCF02271B2CB96D0014A0F3 /* HipsterTests */,
+				6CCF02321B2CB96D0014A0F3 /* HipsterUITests */,
+				6CCF02111B2CB96D0014A0F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6CCF02111B2CB96D0014A0F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CCF02101B2CB96D0014A0F3 /* Hipster.app */,
+				6CCF02241B2CB96D0014A0F3 /* HipsterTests.xctest */,
+				6CCF022F1B2CB96D0014A0F3 /* HipsterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CCF02121B2CB96D0014A0F3 /* Hipster */ = {
+			isa = PBXGroup;
+			children = (
+				6CCF02131B2CB96D0014A0F3 /* AppDelegate.swift */,
+				6CCF02151B2CB96D0014A0F3 /* ViewController.swift */,
+				6CCF02171B2CB96D0014A0F3 /* Main.storyboard */,
+				6CCF021A1B2CB96D0014A0F3 /* Assets.xcassets */,
+				6CCF021C1B2CB96D0014A0F3 /* LaunchScreen.storyboard */,
+				6CCF021F1B2CB96D0014A0F3 /* Info.plist */,
+				6CCF02431B2CBAEE0014A0F3 /* CurrentWeather.plist */,
+			);
+			path = Hipster;
+			sourceTree = "<group>";
+		};
+		6CCF02271B2CB96D0014A0F3 /* HipsterTests */ = {
+			isa = PBXGroup;
+			children = (
+				6CCF02281B2CB96D0014A0F3 /* HipsterTests.swift */,
+				6CCF022A1B2CB96D0014A0F3 /* Info.plist */,
+			);
+			path = HipsterTests;
+			sourceTree = "<group>";
+		};
+		6CCF02321B2CB96D0014A0F3 /* HipsterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6CCF02331B2CB96D0014A0F3 /* HipsterUITests.swift */,
+				6CCF02351B2CB96D0014A0F3 /* Info.plist */,
+			);
+			path = HipsterUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CCF020F1B2CB96D0014A0F3 /* Hipster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CCF02381B2CB96D0014A0F3 /* Build configuration list for PBXNativeTarget "Hipster" */;
+			buildPhases = (
+				6CCF020C1B2CB96D0014A0F3 /* Sources */,
+				6CCF020D1B2CB96D0014A0F3 /* Frameworks */,
+				6CCF020E1B2CB96D0014A0F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hipster;
+			productName = Hipster;
+			productReference = 6CCF02101B2CB96D0014A0F3 /* Hipster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CCF02231B2CB96D0014A0F3 /* HipsterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CCF023B1B2CB96D0014A0F3 /* Build configuration list for PBXNativeTarget "HipsterTests" */;
+			buildPhases = (
+				6CCF02201B2CB96D0014A0F3 /* Sources */,
+				6CCF02211B2CB96D0014A0F3 /* Frameworks */,
+				6CCF02221B2CB96D0014A0F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CCF02261B2CB96D0014A0F3 /* PBXTargetDependency */,
+			);
+			name = HipsterTests;
+			productName = HipsterTests;
+			productReference = 6CCF02241B2CB96D0014A0F3 /* HipsterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6CCF022E1B2CB96D0014A0F3 /* HipsterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CCF023E1B2CB96D0014A0F3 /* Build configuration list for PBXNativeTarget "HipsterUITests" */;
+			buildPhases = (
+				6CCF022B1B2CB96D0014A0F3 /* Sources */,
+				6CCF022C1B2CB96D0014A0F3 /* Frameworks */,
+				6CCF022D1B2CB96D0014A0F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CCF02311B2CB96D0014A0F3 /* PBXTargetDependency */,
+			);
+			name = HipsterUITests;
+			productName = HipsterUITests;
+			productReference = 6CCF022F1B2CB96D0014A0F3 /* HipsterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CCF02081B2CB96D0014A0F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Dulio Denis";
+				TargetAttributes = {
+					6CCF020F1B2CB96D0014A0F3 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					6CCF02231B2CB96D0014A0F3 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 6CCF020F1B2CB96D0014A0F3;
+					};
+					6CCF022E1B2CB96D0014A0F3 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 6CCF020F1B2CB96D0014A0F3;
+					};
+				};
+			};
+			buildConfigurationList = 6CCF020B1B2CB96D0014A0F3 /* Build configuration list for PBXProject "Hipster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CCF02071B2CB96D0014A0F3;
+			productRefGroup = 6CCF02111B2CB96D0014A0F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CCF020F1B2CB96D0014A0F3 /* Hipster */,
+				6CCF02231B2CB96D0014A0F3 /* HipsterTests */,
+				6CCF022E1B2CB96D0014A0F3 /* HipsterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CCF020E1B2CB96D0014A0F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CCF021E1B2CB96D0014A0F3 /* LaunchScreen.storyboard in Resources */,
+				6CCF021B1B2CB96D0014A0F3 /* Assets.xcassets in Resources */,
+				6CCF02441B2CBAEE0014A0F3 /* CurrentWeather.plist in Resources */,
+				6CCF02191B2CB96D0014A0F3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCF02221B2CB96D0014A0F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCF022D1B2CB96D0014A0F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CCF020C1B2CB96D0014A0F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CCF02161B2CB96D0014A0F3 /* ViewController.swift in Sources */,
+				6CCF02141B2CB96D0014A0F3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCF02201B2CB96D0014A0F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CCF02291B2CB96D0014A0F3 /* HipsterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCF022B1B2CB96D0014A0F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CCF02341B2CB96D0014A0F3 /* HipsterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CCF02261B2CB96D0014A0F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CCF020F1B2CB96D0014A0F3 /* Hipster */;
+			targetProxy = 6CCF02251B2CB96D0014A0F3 /* PBXContainerItemProxy */;
+		};
+		6CCF02311B2CB96D0014A0F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CCF020F1B2CB96D0014A0F3 /* Hipster */;
+			targetProxy = 6CCF02301B2CB96D0014A0F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6CCF02171B2CB96D0014A0F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CCF02181B2CB96D0014A0F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CCF021C1B2CB96D0014A0F3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CCF021D1B2CB96D0014A0F3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CCF02361B2CB96D0014A0F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6CCF02371B2CB96D0014A0F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CCF02391B2CB96D0014A0F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Hipster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.ddapps.Hipster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6CCF023A1B2CB96D0014A0F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Hipster/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.ddapps.Hipster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6CCF023C1B2CB96D0014A0F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HipsterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.ddapps.HipsterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hipster.app/Hipster";
+			};
+			name = Debug;
+		};
+		6CCF023D1B2CB96D0014A0F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HipsterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.ddapps.HipsterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hipster.app/Hipster";
+			};
+			name = Release;
+		};
+		6CCF023F1B2CB96D0014A0F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HipsterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.ddapps.HipsterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Hipster;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		6CCF02401B2CB96D0014A0F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HipsterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.ddapps.HipsterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Hipster;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CCF020B1B2CB96D0014A0F3 /* Build configuration list for PBXProject "Hipster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CCF02361B2CB96D0014A0F3 /* Debug */,
+				6CCF02371B2CB96D0014A0F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CCF02381B2CB96D0014A0F3 /* Build configuration list for PBXNativeTarget "Hipster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CCF02391B2CB96D0014A0F3 /* Debug */,
+				6CCF023A1B2CB96D0014A0F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6CCF023B1B2CB96D0014A0F3 /* Build configuration list for PBXNativeTarget "HipsterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CCF023C1B2CB96D0014A0F3 /* Debug */,
+				6CCF023D1B2CB96D0014A0F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6CCF023E1B2CB96D0014A0F3 /* Build configuration list for PBXNativeTarget "HipsterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CCF023F1B2CB96D0014A0F3 /* Debug */,
+				6CCF02401B2CB96D0014A0F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CCF02081B2CB96D0014A0F3 /* Project object */;
+}
