@@ -21,7 +21,7 @@
 		<key>precipIntensity</key>
 		<integer>0</integer>
 		<key>precipProbability</key>
-		<real>0</real>
+		<real>0.1</real>
 		<key>temperature</key>
 		<integer>80</integer>
 		<key>apparentTemperature</key>
