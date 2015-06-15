@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Hipster
 //
-//  Created by Dulio Denis on 6/14/15.
-//  Copyright (c) 2015 Dulio Denis. All rights reserved.
+//  Created by Dulio Denis on 6/13/15.
+//  Copyright © 2015 Dulio Denis. All rights reserved.
 //
 
 import UIKit
@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        // Override point for customization after application launch.
         return true
     }
 

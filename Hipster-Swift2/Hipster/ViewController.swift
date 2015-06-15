@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  Hipster
 //
-//  Created by Dulio Denis on 6/14/15.
-//  Copyright (c) 2015 Dulio Denis. All rights reserved.
+//  Created by Dulio Denis on 6/13/15.
+//  Copyright © 2015 Dulio Denis. All rights reserved.
 //
 
 import UIKit
@@ -33,7 +33,8 @@ class ViewController: UIViewController {
             print(data)
         })
         
-        dataTask.resume()
+        dataTask?.resume()
     }
+
 }
 

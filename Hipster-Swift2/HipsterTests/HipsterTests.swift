@@ -2,11 +2,10 @@
 //  HipsterTests.swift
 //  HipsterTests
 //
-//  Created by Dulio Denis on 6/14/15.
-//  Copyright (c) 2015 Dulio Denis. All rights reserved.
+//  Created by Dulio Denis on 6/13/15.
+//  Copyright © 2015 Dulio Denis. All rights reserved.
 //
 
-import UIKit
 import XCTest
 
 class HipsterTests: XCTestCase {
@@ -23,7 +22,7 @@ class HipsterTests: XCTestCase {
     
     func testExample() {
         // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
     func testPerformanceExample() {
