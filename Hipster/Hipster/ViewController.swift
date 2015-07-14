@@ -15,25 +15,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var currentPrecipitationLabel: UILabel?
     
     private let forecastAPIKey = "YOUR-API-KEY"
+    let coordinate: (latitude: Double, longitude: Double) = (40.7528, -73.9765)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let baseURL = NSURL(string: "https://api.forecast.io/forecast/\(forecastAPIKey)/")
-        let forecastURL = NSURL(string: "37.8267,-122.423", relativeToURL: baseURL)
-        
-        // Use NSURLSession API to fetch data
-        let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
-        let session = NSURLSession(configuration: configuration)
-        
-        // NSURLRequest Object
-        let request = NSURLRequest(URL: forecastURL!)
-        
-        let dataTask = session.dataTaskWithRequest(request, completionHandler: { (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
-            print(data)
-        })
-        
-        dataTask.resume()
+        let forecastService = ForecastService(APIKey: forecastAPIKey)
+        forecastService.getForecast(coordinate.latitude, longitude: coordinate.longitude) {
+            (let currently) in
+            if let currentWeather = currently {
+                dispatch_async(dispatch_get_main_queue()) {
+                    if let temperature = currentWeather.temperature {
+                        self.currentTemperatureLabel?.text = "\(temperature+100)º"
+                    }
+                    
+                    if let humidity = currentWeather.humidity {
+                        self.currentHumidityLabel?.text = "\(humidity)%"
+                    }
+                    
+                    if let precipitation = currentWeather.precipProbability {
+                        self.currentPrecipitationLabel?.text = "\(precipitation)%"
+                    }
+                }
+            }
+        }
     }
 }
 

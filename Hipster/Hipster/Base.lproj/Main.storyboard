@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Hipster" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +21,47 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hipster" translatesAutoresizingMaskIntoConstraints="NO" id="kd9-1B-4IF">
+                                <rect key="frame" x="166" y="28" width="268" height="369"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="XYb-F8-l2b"/>
+                                    <constraint firstAttribute="width" secondItem="kd9-1B-4IF" secondAttribute="height" multiplier="268:369" id="fyp-ZU-IE1"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="fyp-ZU-IE1"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="451" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Miy-Y8-U5c">
+                                <rect key="frame" x="258" y="460" width="84" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="uDb-b8-oAn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kd9-1B-4IF" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="3Em-r0-APi"/>
+                            <constraint firstItem="Miy-Y8-U5c" firstAttribute="top" secondItem="kd9-1B-4IF" secondAttribute="bottom" constant="63" id="8W2-jJ-ztB"/>
+                            <constraint firstItem="Miy-Y8-U5c" firstAttribute="centerX" secondItem="kd9-1B-4IF" secondAttribute="centerX" id="Y5o-jQ-m8H"/>
+                            <constraint firstAttribute="centerY" secondItem="Miy-Y8-U5c" secondAttribute="centerY" constant="-189.5" id="bFp-4M-S74"/>
+                            <constraint firstAttribute="centerX" secondItem="kd9-1B-4IF" secondAttribute="centerX" id="qMB-NK-Ztf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentTemperatureLabel" destination="Miy-Y8-U5c" id="H2F-eQ-avi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Hipster" width="150" height="215"/>
+    </resources>
 </document>

@@ -85,9 +85,9 @@
 			children = (
 				6C4F30931B2E844100D4403E /* AppDelegate.swift */,
 				6C4F30951B2E844100D4403E /* ViewController.swift */,
+				6C4F30B71B30C9D800D4403E /* ForecastService.swift */,
 				6C4F30B31B2E851200D4403E /* CurrentWeather.swift */,
 				6C4F30B51B2E855100D4403E /* NetworkOperation.swift */,
-				6C4F30B71B30C9D800D4403E /* ForecastService.swift */,
 				6C4F30971B2E844100D4403E /* Main.storyboard */,
 				6C4F309C1B2E844100D4403E /* LaunchScreen.xib */,
 				6C4F309A1B2E844100D4403E /* Images.xcassets */,
