@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="HelveticaNeue.ttc">
@@ -22,6 +23,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="451" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Miy-Y8-U5c">
+                                <rect key="frame" x="350" y="464" width="84" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="uDb-b8-oAn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hipster" translatesAutoresizingMaskIntoConstraints="NO" id="kd9-1B-4IF">
                                 <rect key="frame" x="166" y="28" width="268" height="369"/>
                                 <constraints>
@@ -34,27 +44,28 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="451" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Miy-Y8-U5c">
-                                <rect key="frame" x="258" y="460" width="84" height="59"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="dvf-Iv-1KA">
+                                <rect key="frame" x="166" y="464" width="60" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="59" id="uDb-b8-oAn"/>
+                                    <constraint firstAttribute="height" constant="60" id="2zy-eO-xq8"/>
+                                    <constraint firstAttribute="width" constant="60" id="fEv-ys-O74"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.58671800829999998" green="0.68325199660000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="kd9-1B-4IF" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="3Em-r0-APi"/>
-                            <constraint firstItem="Miy-Y8-U5c" firstAttribute="top" secondItem="kd9-1B-4IF" secondAttribute="bottom" constant="63" id="8W2-jJ-ztB"/>
-                            <constraint firstItem="Miy-Y8-U5c" firstAttribute="centerX" secondItem="kd9-1B-4IF" secondAttribute="centerX" id="Y5o-jQ-m8H"/>
-                            <constraint firstAttribute="centerY" secondItem="Miy-Y8-U5c" secondAttribute="centerY" constant="-189.5" id="bFp-4M-S74"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="dvf-Iv-1KA" secondAttribute="bottom" constant="76" id="7Xh-yi-Mgd"/>
+                            <constraint firstItem="Miy-Y8-U5c" firstAttribute="top" secondItem="kd9-1B-4IF" secondAttribute="bottom" constant="67" id="8W2-jJ-ztB"/>
+                            <constraint firstItem="dvf-Iv-1KA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="150" id="GRh-u1-gbq"/>
+                            <constraint firstItem="dvf-Iv-1KA" firstAttribute="top" secondItem="kd9-1B-4IF" secondAttribute="bottom" constant="67" id="HKl-JE-cwm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Miy-Y8-U5c" secondAttribute="trailing" constant="150" id="UCa-cQ-CxU"/>
                             <constraint firstAttribute="centerX" secondItem="kd9-1B-4IF" secondAttribute="centerX" id="qMB-NK-Ztf"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="currentTemperatureLabel" destination="Miy-Y8-U5c" id="H2F-eQ-avi"/>
+                        <outlet property="currentWeatherIcon" destination="dvf-Iv-1KA" id="Bzh-gR-jsp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -63,5 +74,6 @@
     </scenes>
     <resources>
         <image name="Hipster" width="150" height="215"/>
+        <image name="default" width="30" height="30"/>
     </resources>
 </document>
